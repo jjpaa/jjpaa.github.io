@@ -97,12 +97,23 @@ ul.main-menu li a {
   border-bottom: solid transparent 3px;
   color:#cfd2da;
 }
+
 ul.main-menu li a:hover {
   color:#FFFFFF;
 }
 ul.main-menu li a.active {
   color:#FFFFFF;
   border-bottom-color:#EF6D3D;
+}
+
+ul.social
+{
+  list-style-type: none;
+  display: flex;
+}
+
+ul.social li {
+  margin-right: 10px;
 }
 
 .hide {
@@ -112,5 +123,7 @@ ul.main-menu li a.active {
   display:block;
 }
 
-
+img {
+  border-radius: 50%;
+}
 
