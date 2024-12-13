@@ -16,46 +16,73 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
   
-
-
   <body>
     <div id="scroll-container">
       <div id="scroll-text">
       </div>
     </div>
 
-    <header id="header">
-      <img src="me.jpg" width="200">
-      <h1>Juho Järvenpää</h1>
-      <h2>Software Developer</h2>
-      
+    <div class="device">
+      <header id="header">
+        <img src="images/me.jpg" width="200" class="photo">
+        <h1>Juho Järvenpää</h1>
+        <h2>Software Developer</h2>
+        <h4>Jack of all trades</h4>
+      </header>
+    </div>
+
+    <div id="container" style="padding: 5%;">
+
       <ul class="main-menu">
         <li><a href="#home">About me</a></li>
-        <li><a href="#about">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
+      </ul>     
+
       <div class="inner">
         <div id="content"> 
           
           <div id="home" class="content-region hide">
-            <h2>Test</h2>
+            <p>Information and communications technology engineer specialized in software development for desktop and embedded devices.
+            I am most proficient while using .NET/C# and other strongly typed OOP languages.
+            In work I have maintained legacy projects and created new software using C#, C++, Java. <br><br>
+            I have created scripts using python, powershell, bash, NSIS, Github CLI for various of needs.
+            I have used following IDE's and frameworks: VS, VS Code, NetBeans, IntelliJ, Android Studio, MAUI, WPF, WinForms, Android SDK <br>
+            I have been in charge of managing on-prem build server and CI/CD pipeline using TeamCity, GitHub and VMware. <br>
+            As a hobby I have studied graphics and game programming using MonoGame, OpenGL, Unity. <br><br>
+            During my studies I learned topics like Web development (HTML, CSS, JS, NodeJS, PHP), Game development (Unity),
+            functional programming (Scala), databases (SQL, MongoDB), Machine learning (TensorFlow)</p>
           </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>Projects</h2>
-            <p>
-              Test
-            </p>
+
+          <div id="projects" class="content-region hide">
+            <div class="project">
+								<a href="https://www.theseus.fi/handle/10024/510414"><img class="project-images" src="images/thesis.jpg" alt="" /></a>
+								<h3><a href="https://www.theseus.fi/handle/10024/510414">Thesis</a></h3>
+								<p>Made using .NET/C# and WPF UI Framework</p>
+						</div>
+						<div class="project">
+								<a href="https://github.com/jjpaa/Image_converter"><img class="project-images" src="images/ImageConverter.jpg" alt="" /></a>
+								<h3><a href="https://github.com/jjpaa/Image_converter">Image Converter</a></h3>
+								<p>Python script that manipulates images</p>
+						</div>
+						<div class="project">
+								<a href="https://github.com/jjpaa/GP_Coursework"><img class="project-images" src="images/GP.jpg" alt="" /></a>
+								<h3><a href="https://github.com/jjpaa/GP_Coursework">OpenGL Coursework</a></h3>
+								<p>Made using C++ and GLSL</p>
+						</div>
+						<div class="project">
+								<a><img src="images/mystery.jpg" alt="" class="project-images"/></a>
+								<h3><a>In development:</a></h3>
+								<h4><a>Puzzle game</a></h4>
+								<p>C#, MonoGame, Cross-platform</p>
+						</div>
           </div>
+
           
           <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
             <div>
 							<ul class="social">
-                <li><a href="https://github.com/jjpaa" class="fa fa-github" style="font-size:48px;color:rgb(4, 172, 198)"></a></li>
+                <li><a href="https://github.com/jjpaa" class="fa fa-github" style="padding-right: 20px; font-size:48px;color:rgb(10,102,194)"></a></li>
                 <li><a href="https://www.linkedin.com/in/juho-j%C3%A4rvenp%C3%A4%C3%A4-54a53117a/" class="fa fa-linkedin-square" style="font-size:48px;color:rgb(10,102,194)"></a></li>
 							</ul>
 						</div>
