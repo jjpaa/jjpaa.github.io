@@ -17,6 +17,7 @@ p {
 body {
 
 }
+
 header, #content, footer { 
   padding:25px;
   color:#FFFFFF; 
@@ -75,22 +76,48 @@ z-index: -1;
 position: absolute;
 }
 
-.scroll-text {
+.scroll-text-1 {
 height: 100%;
 text-align: left;
 background-color: transparent;
 color: rgb(26, 128, 0);
-
-transform: translateY(0%);
+font-size: 12px;
+transform: translateY(-50%);
 
 animation: my-animation 10s linear infinite;
 }
 
+.scroll-text-2 {
+  height: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: rgb(0, 128, 64);
+  z-index: -2;
+  font-size: 10px;
+  
+  transform: translateY(-50%);
+  
+  animation: my-animation 14s linear infinite;
+  }
+
+.scroll-text-3 {
+  height: 100%;
+  text-align: left;
+  background-color: transparent;
+  font-size: 8px;
+  color: rgb(2, 66, 7);
+  z-index: -3;
+  
+  transform: translateY(-50%);
+  
+  animation: my-animation 18s linear infinite;
+  }
+
 @keyframes my-animation {
   from {
-    transform: translateY(0%);
+    transform: translateY(-50%);
   }
   to {
-    transform: translateY(100%);
+    transform: translateY(200%);
   }
 }

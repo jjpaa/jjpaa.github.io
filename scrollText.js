@@ -6,16 +6,16 @@ function binaryFall()
   let divIdHeader = "dynamicDiv"
   let divName = ""
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 500; i++) {
     divName = divIdHeader.concat(i)
     var elemDiv = document.createElement('div');
-    elemDiv.className = "scroll-text"
+    elemDiv.className = "scroll-text-" + (getRandomInt(3) + 1)
     elemDiv.innerHTML = createText()
 
     let randRight = getRandomInt(100) + 1
     let randBottom = getRandomInt(100) + 1
 
-    elemDiv.style.cssText = 'position:absolute;right:' + randRight +'%;bottom:' + randBottom + '%;opacity:1.0;z-index:100;background:#000;'
+    elemDiv.style.cssText = 'position:absolute;right:' + randRight +'%;bottom:' + randBottom + '%;opacity:1.0;z-index:100;'
 
     document.getElementById('scroll-container').appendChild(elemDiv);
   } 
